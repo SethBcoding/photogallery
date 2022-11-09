@@ -6,24 +6,32 @@ body {
 
 html { 
     background-color: black; 
-
 }
+
+
 
 main { 
     background-color: white;
-    padding-left: 20px;
     padding-right: 40px;
+    padding-left: 40px;
+}
+
+section {
+    display:inline-flex;
+    
 }
 
 
 nav {
-    display:flex;
-    
+    display:block;
+    float:right;
 }
 
 a:hover {
     color: #007D7B;
 }
+
+
 
 nav a {
     color: #ffffff ;
@@ -50,21 +58,20 @@ h1,::placeholder {
     color: #007D7B;
 }
 
-.shortphoto {
-    width: 420px;
-    height: 281px;
-} 
-
-.longphoto {
-    width: 420px;
-    height: 360px;
+h1 {
+    display: inline-block;
 }
 
 .white {
     color: #ffffff;
 }
 
+h2 {
+    display:flexbox;
+}
+
 footer {
     text-transform: uppercase;
     font-weight: bold;
 }
+
