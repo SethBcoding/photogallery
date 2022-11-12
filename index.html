@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
     <head>
-		<title>test</title>
+		<title>Photography</title>
 		<meta charset="utf-8" >
 		<link href="styles.css" rel="stylesheet">
 		<meta name="Auther" content="Seth Sanford">
 		<!--link rel="icon" type="image/png" sizes="" href=""-->
 	</head>
-<header>
-    <h1>TK Photography</h1>
-
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-
-<Main>
+<body>
         
-    <section>
-        <h2>About</h2>
-        <img src="images/TK.png" alt="header image">
-        <p>Hello!
-        I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
-    </section>
+    <header>
+        <h1 class="big">TK Photography</h1>
 
-    <section>
-        <h2>Gallery</h2>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-        <p> Here are some highlights of my work. 
-            The locations and year are in the caption.</p>
-    </section>
+    </header>
 
-    <section>
-        <figure><img src="images/Chile.png" alt="Chile, 2001">  </figure>
-        <figure><img src="images/Guatemala.png" alt="Guatemala, 1997">  </figure>
-        <figure></figure><img src="images/Hawaii.png" alt="Hawaii, 2010">  </figure>
 
-        <figure><img src="images/Iran.png" alt="Iran, 1999">  </figure>
-        <figure><img src="images/Ireland.png" alt=" Ireland, 2012">  </figure>
-        <figure><img src="images/Italy.png" alt="Italy, 2015">  </figure>
+    <Main>
 
-        <figure><img src="images/Moab-Desert.png" alt="Moab Desert, 2020">  </figure> 
-        <figure><img src="images/Rocky-Mountains.png" alt="Moab Desert, 2020">  </figure>
-        <figure><img src="images/Switzerland.png" alt=" Switzerland, 2014">  </figure>
+        <h1 >About</h1>
+        <img class="imglong" src="images/TK.png" alt="header image">
 
-        <figure><img src="images/UK.png" alt="UK, 2005">  </figure>
-        <figure><img src="images/USA.png" alt="USA, 2021">  </figure>
-        <figure><img src="images/Wyoming.png" alt="Wyoming, 2021">  </figure>
-    </section>
+        <section class="biggie">
+            <p>Hello! <br>
+            I'm TK and I'm a photographer. <br>I love looking at life through the lens of my <br> camera. Landscape photography is my <br>speciality and it's taken me all over the world.</p>
+        </section>
 
-</Main>
-<div class="white">
+            <h1>Gallery</h1>
 
-    <h2>Contact</h2>
-    <p>Please fill out this form and I'll connect with you soon.</p>
-    
-    <title> contact information</title>
+        <section>
+                <p> Here are some highlights of my work. 
+                The locations and year are in the caption.</p>
+        </section>
 
-   
-<form>
-    <input type="text" id="input-name" placeholder="Your full name">
-    <input type="email" id="input-email" placeholder="Enter your email address">
-    <input type="text" id="input-message" placeholder="What can I help you with?">
-    <input type="submit" value="Submit" id="input-submit">
-</form>
+        <section>
 
-    <footer>
-    <p><bold>Copyright 2021 TK Photography</bold></p>
-    </footer>
+            <figure><img src="images/Chile.png" alt="Chile, 2001">  </figure>
+            <figure><img src="images/Guatemala.png" alt="Guatemala, 1997">  </figure>
+            <figure><img src="images/Hawaii.png" alt="Hawaii, 2010">  </figure>
 
-</div>
+            <figure><img src="images/Iran.png" alt="Iran, 1999">  </figure>
+            <figure><img src="images/Ireland.png" alt=" Ireland, 2012">  </figure>
+            <figure><img src="images/Italy.png" alt="Italy, 2015">  </figure>
+
+            <figure><img src="images/Moab-Desert.png" alt="Moab Desert, 2020">  </figure> 
+            <figure><img src="images/Rocky-Mountains.png" alt="Moab Desert, 2020">  </figure>
+            <figure><img src="images/Switzerland.png" alt=" Switzerland, 2014">  </figure>
+
+            <figure><img src="images/UK.png" alt="UK, 2005">  </figure>
+            <figure><img src="images/USA.png" alt="USA, 2021">  </figure>
+            <figure><img src="images/Wyoming.png" alt="Wyoming, 2021">  </figure>
+
+        </section>
+
+    </Main>
+        <div class="white">
+
+            <h2>Contact</h2>
+            <p><strong> fill out this form and I'll connect with you soon.</strong></p>
+            
+            <!--contact information-->
+
+        
+            <form action="contact.php" method="post">
+
+                <p>NAME</p> 
+                    <input type="text" id="input-name" placeholder="Your full name">
+                <p>EMAIL</p>
+                    <input type="email" id="input-email" placeholder="Enter your email address">
+                <p>MESSAGE</p>
+                    <input type="text" id="input-message" placeholder="What can I help you with?">
+                    <br>
+                    <input type="submit" value="Submit" id="input-submit">
+                    
+            </form>
+
+
+
+            <footer>
+                <p>Copyright 2021 TK Photography</p>
+            </footer>
+
+        </div>
 </body>
 </html>
